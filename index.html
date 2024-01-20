@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tea House</title>
+    <!-- ! tailwind and daisyUI cdn link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ! font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ! google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ! tailwind component customization -->
+    <style type="text/tailwindcss">
+      @layer utilities {
+       
+      }
+    </style>
+    <!-- ! tailwind customization script -->
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "640px",
+            md: "768px",
+            lg: "992px",
+            xl: "1130px",
+          },
+
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-manrope">
+    <main>
+      <!-- ! banner section -->
+      <section class="container mx-auto px-6 lg:px-0 mt-16">
+        <div class="flex gap-2 flex-col lg:flex-row">
+          <!-- ! content -->
+          <div class="space-y-7 flex-1">
+            <h1
+              class="text-[#1C1C1C] text-4xl leading-[3.125rem] lg:text-[5rem] lg:leading-[6.25rem] font-extrabold max-w-[39.25rem] md:max-lg:text-6xl md:max-lg:leading-[5rem] sm:max-md:text-5xl sm:max-md:leading-[4.0625rem]"
+            >
+              It's good <br />
+              tea time at The Tea House
+            </h1>
+            <p class="text-lg font-medium max-w-lg">
+              Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+              Your Taste Buds.
+            </p>
+            <button
+              class="bg-gradient-to-r flex items-center gap-2 from-[#FF8938] from-0% to-[#F00] to-100% py-4 px-5 rounded-[0.625rem] text-white font-bold text-xl"
+            >
+              Explore More
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+              >
+                <path
+                  d="M4.5 19.7788L19.5 4.77881M19.5 4.77881H8.25M19.5 4.77881V16.0288"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <!-- ! image -->
+          <div class="flex-1 lg:p-20 lg:translate-y-10 relative">
+            <img class="w-full h-full" src="./images/banners.png" alt="" />
+            <div
+              class="grid absolute left-[18%] bottom-[5%] lg:bottom-[14%] lg:left-[14%] shadow-lg bg-white py-4 px-5 md:py-5 md:px-7 rounded-md w-fit grid-cols-[auto_1fr] items-center justify-center gap-4"
+            >
+              <i class="fa-solid fa-star text-2xl md:text-4xl text-amber-400"></i>
+              <div class="">
+                <h3 class="font-extrabold text-2xl md:text-3xl text-black/80">5.00</h3>
+                <p class="font-semibold sm:text-base text-sm text-[#777]">Trust Pilot Ratings</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
