@@ -36,6 +36,21 @@
           @apply text-base leading-7 font-medium text-center text-[#777];
         }
       }
+      @layer utilities {
+        .footer-bg {
+          background: linear-gradient(
+            270deg,
+            rgba(255, 0, 0, 0.1) 0%,
+            rgba(255, 137, 56, 0.1) 100%
+          );
+        }
+      }
+      .primary-gradient {
+        background: linear-gradient(270deg, #f00 0%, #ff8938 100%);
+      }
+      .primary-gradient-h {
+        background: linear-gradient(270deg, #ff8938 0%, #f00 100%);
+      }
     </style>
     <!-- ! tailwind customization script -->
     <script>
@@ -267,5 +282,84 @@
         </div>
       </section>
     </main>
+
+    <footer class="footer-bg py-12 mt-32">
+      <div class="container mx-auto px-6 lg:px-0">
+        <div
+          class="flex md:items-center justify-between md:flex-row flex-col mb-12 md:mb-24 max-w-[970px]"
+        >
+          <img class="w-16" src="./images/cup.png" alt="">
+          <!-- ! -->
+          <div class="flex items-center justify-between mt-3 sm:mt-0 flex-wrap gap-4 md:gap-10">
+            <p class="text-xl leading-10 font-medium text-[#494949]">
+              Ready to get strated?
+            </p>
+            <button
+              class="primary-gradient py-3 px-5 md:py-4 md:px-7 text-lg font-medium md:font-bold text-white rounded-lg hover:primary-gradient-h"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+        <!-- ! footer link -->
+        <div class="footer text-base-content">
+          <nav>
+            <header class="footer-title text-lg font-semibold text-black/80">
+              Quick Links
+            </header>
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">About Us</a>
+            <a class="link link-hover">Insurance</a>
+            <a class="link link-hover">Privacy Policy</a>
+          </nav>
+          <nav>
+            <header class="footer-title text-lg font-semibold text-black/80">
+              Our Service
+            </header>
+            <a class="link link-hover">Life Insurance</a>
+            <a class="link link-hover">Car Insurance</a>
+            <a class="link link-hover">Health Insurance</a>
+            <a class="link link-hover">House Insurance</a>
+          </nav>
+          <nav>
+            <header class="footer-title text-lg font-semibold text-black/80">
+              Help
+            </header>
+            <a class="link link-hover">FAQs</a>
+            <a class="link link-hover">Contact Us</a>
+          </nav>
+          <div>
+            <h3
+              class="text-black/80 text-2xl font-semibold leading-10 max-w-[13.5rem]"
+            >
+              Subscribe to our newsletter
+            </h3>
+            <nav>
+              <header
+                class="footer-title text-lg font-semibold text-black/80 mt-11"
+              >
+                Email address
+              </header>
+              <div class="w-60 h-[1px] bg-[#494949] mt-6 mb-12"></div>
+              <!-- ! footer icon -->
+              <div class="flex items-center gap-6">
+                <a class="text-2xl" href="#"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a class="text-2xl" href="#"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a class="text-2xl" href="#"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <p class="font-medium text-center mt-14 text-black/70">
+          © 2027 UIDesign.to - All rights reserved.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
